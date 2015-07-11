@@ -1,0 +1,22 @@
+//- index.jade
+extends layout
+
+block content
+    h1 Drop Web
+    section.auth
+      h2 Authentication
+      div.twitter
+        h3 Twitter
+      div.music
+        h3 Music
+    section.controls
+      h2 Controls
+      div.search
+        input(type="text", placeholder="search")
+        button Search
+        div.results
+          ol
+            li No results
+      button.play Play
+      button.pause Pause
+      button.next Next
