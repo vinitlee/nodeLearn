@@ -2,21 +2,27 @@
 extends layout
 
 block content
-    h1 Drop Web
-    section.auth
-      h2 Authentication
-      div.twitter
-        h3 Twitter
-      div.music
-        h3 Music
-    section.controls
-      h2 Controls
-      div.search
-        input(type="text", placeholder="search")
-        button Search
-        div.results
-          ol
-            li No results
-      button.play Play
-      button.pause Pause
-      button.next Next
+  .onboard
+    button.googleAuth Google
+  .app(layout flex vertical)
+    .statusbar(layout justified)
+      .section(flex)
+        | Section 
+        span.number 0
+        | : 
+        span.text
+      .score
+        span.calculated
+        span %
+      button.signout Sign out of 
+        span.name Vincent Lee
+    .view(flex layout vertical)
+      .question(flex)
+        .number 00
+        span.fullText Have you ever 
+          span.text 0000
+        div
+          span.antagonism
+      .response(layout center-center)
+        span.mark done.
+        span.unmark i lied.

@@ -25,13 +25,6 @@ app.use(cookieParser())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
-app.use(require('stylus').middleware(
-  src:  path.join(__dirname, '/src/')
-  dest: path.join(__dirname, '/public/')
-))
-
-# app.use(require('stylus').middleware(path.join(__dirname, 'public')))
-
 app.use(express.static(path.join(__dirname, 'public')))
 
 # Serving ----------
